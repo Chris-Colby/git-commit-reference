@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="This is how to host a static website on Amazon Web Services AWS S3">
+     <!--keep description under 200 characters.some searches will penalize me for overdoing it here - - -keep it brief-->
+     <title>GitHub Commit with Website Deployment</title>
+     <!--Title tags specify the name of the webpage, and whatever is in here will show up in the tab of the page.title tags hold text. -->
+     <meta name="keywords"
+          content="GitHub commit tutorial, Chris Colby van Scyoc, tech pages, how to host a website, how to, host website">
+     <meta name="author" content="Chris Colby van Scyoc">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3689162469144098"
+          crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+     <main class="container">
+          <h1>Chris Code n Stuff</h1>
+          <!-- <p>Tech Reminders or Tech How To</p> -->
+           <p>How to Tech Reminders</p>
+
+
+          <h2>GitHub Commit with Website Deployment</h2>
+          <article>
+               <!-- Sometimes I forget how to do a particular step in a process. So, I make notes for myself (and you, too). -->
+               <!-- <section>
+                   Section 1 - Here are my step by step notes for Hosting a Static Website on AWS S3.
+                   <aside>
+                        Aside - Use the ASIDE tag for any content not directly related to on the page - like advertisements - like google adsense and use the aside tag to define this - this content is getting is getting shown to the user but not core content
+                   </aside>
+              </section> -->
+               <!-- <br> -->
+
+
+               <section>
+                    <ol type="1">
+                         <li><strong>Development Environment Setup Check</strong> - This is mostly here for me....<br>
+                         </li>
+                         <li>Open CLI / New Terminal</li>
+                         <li>git --version</li>
+                         <li>node --version</li>
+                         <li>npm --version</li>
+                         <li>echo $path</li>
+                         <li>
+                              <h3>LET'S GET STARTED!</h3>
+                         </li>
+                         <li>Open CLI / Terminal</li>
+                         <li><h4>In the Terminal / CLI</h4></li>
+                         <li>Navigate into proper directory</li>
+                         <li>Create new folder - Type: mkdir nameHere</li>
+                         <li>cd into my newly created directory</li>
+                         <li><h4>NOW TO GITHUB - Goto GitHub (sign in)</h4></li>
+                         <li>Click on Plus Sign dropdown (upper right) and select Create New Repository</li>
+                         <li>Fill out Repository Name</li>
+                         <li>Fill out Description</li>
+                         <li>Public (radio button) is fine</li>
+                         <li>Select checkbox in Initialize with a README file.</li>
+                         <li>Add a README file</li>
+                         <li>Click green button - "Create Repository"</li>
+                         <li>Click green "Code" button - "Create Repository"</li>
+                         <li>Copy the https site url</li>
+                         <li><h4>BACK TO CLI / TERMINAL</h4></li>
+                         <li>Make sure I'm in proper folder/directory</li>
+                         <li>TYPE: git clone PasteTheHttpsIcopiedFromGitHub</li>
+                         <li>TYPE: ls</li>
+                         <li>See newly created GitHub repository</li>
+                         <li>TYPE: cd intoNewlyCreatedGithubRepositoryName</li>
+                         <li>TYPE: ls</li>
+                         <li>See README file</li>
+                         <li>TYPE: git status</li>
+                         <li>See "nothing to commit, working tree clean</li>
+                         <li>FINDER - I duplicated my working-title html file. I renamed my copied/duplicated working title html file to "index.html". I MOVED MY working title/new index.html html file - which I renamed to INDEX.HTML - FILE INTO MY NEWLY CREATED GITHUB REPOSITORY FOLDER - ALL IN FINDER WINDOWS!!!!</li>
+<li>Create index.html / site - - INSTEAD OF THIS - I already had my html/site/file created….I then clicked and dragged from original folder into newly created GitHub repository folder - - then I tipped git status and then the red untracked file came up.</li>
+<li>TYPE: git add .</li>
+<li>TYPE: git status</li>
+<li>See new file:</li>
+<li>TYPE: git commit -m "Info about my page."</li>
+<li>TYPE: git status</li>
+<li>See "Your branch is ahead of 'origin/main' by 1 commit.....use "git push" - nothing to commit, working tree clean</li>
+<li>TYPE: git push</li>
+<li><h4>BACK TO GITHUB</h4></li>
+<li>Refresh the GitHub webpage</li>
+<li>See newly created folder/files - Hooray!</li>
+<li><h4>PREPARE THIS REPOSITORY/WEBPAGE FOR HOSTING THROUGH GITHUB</h4></li>
+<li>Double-check I'm in the proper folder - containing my index.html file</li>
+<li>Click on Settings</li>
+<li>Click on Pages (left side of screen for me)</li>
+<li>Source: Deploy from a branch</li>
+<li>Branch: Main / root / CLICK ON SAVE BUTTON</li>
+<li>Wait for ten minutes - then refresh the web browser</li>
+<li>See your new site!</li>
+<li>Click Visit Site</li>
+
+
+                         <li><strong>NOTE</strong>I choose to drag and drop. I did not move JOJ master folder over,
+                              rather, open the folder on my desktop,
+                              select and drag all the folders and files from within my Master Folder and drag them into
+                              the AWS upload box.
+                              Ex. go to my JOJ master folder, open it and select all the individual files
+                              and folder inside the joj master folder and drag all the individual folders and files into
+                              S3 Upload area.</li>
+                         <li>Click the Upload button</li>
+                         <li>After upload completes - get green Upload Succeeded!</li>
+                         <li>Single click on index.html file - Now taken to a new tab - will see owner, last modified,
+                              size, key. Can also - if lots of files and folders to fit on one page - maybe this is
+                              better:
+                              under “Files and folders” click on the file
+                              under the Name tab - - in search field “Find by name” - can input either index or the page
+                              I'd like to see.</li>
+                         <li><strong>NOTE</strong>: the OBJECT URL (inside the properties tag in the Object Overview
+                              box) - this
+                              represents the file inside AWS - and can be used for public access - but, just because AWS
+                              creates this file usable for public access does not mean that the html file / this link is
+                              accessible</li>
+                         <li>TRY opening the Object URL link in another tab - will get error - XML file does not appear
+                              to have any style info. Code Access Denied, Message Access Denied, etc. This means
+                              that the file is not made public (yet) - I don not have the proper public permissions yet
+                         </li>
+                         <li>Go back to Object Overview tab - In the same index.html overview tab, click the Open
+                              button. Now
+                              I can see the file contents. <strong>NOTE</strong>: the website won’t show up as finished
+                              product - only
+                              the html shows up - the skeleton - latest-my photos didn't show up. Example, click any
+                              link and I get the XML error / Access
+                              Denied message. Simply uploading all of our files does not mean our website is going to
+                              work.
+                              We need to complete more steps. In the above steps, I created my bucket and uploaded my
+                              files.</li>
+                         <li>
+                              <h4>Next Part - configure my bucket to host my static website.</h4>
+                         </li>
+                         <li>Navigate to AWS S3 - Top Left: Click Services (make sure I'm still logged in)</li>
+                         <li>Click S3</li>
+                         <li>Click on my bucket</li>
+                         <li>Select PROPERTIES tab</li>
+                         <li>Scroll down - In STATIC WEBSITE HOSTING area Click Edit button - This is the configuration
+                              I need to set to enable my bucket to host my website</li>
+                         <li>Under “Static website hosting” Select ENABLE (Radio Button) / more info appears</li>
+                         <li>Select - Enable - under static website hosting</li>
+                         <li>More options present themselves — go to index document text box and type in index.html - to
+                              denote that this is the document I want displayed when someone types in my url - this is
+                              my main homepage</li>
+                         <li>Optional - enter in the error.html document - the document that gets displayed when a user
+                              tries to access pages that are not available - can make this page really cool - either
+                              way, enter an html document here - with directions and a link back to the homepage. Note -
+                              this is
+                              the page with the redirection rules and notes. Optional, but considerate. It's good form.
+                         </li>
+                         <li>Click Save Changes button - I got a green note and check mark - “Successfully edited static
+                              website hosting” message in green bar up top</li>
+                         <li>Doublecheck that the static website hosting is enabled - scroll down on the properties
+                              tab/page - it should have some info in it now - remeber to copy the http link created for
+                              my site</li>
+                         <li>Above, we generated an endpoint URL - and configured my error page
+                              <strong>NOTE</strong>: my endpoint url - it looks something like this:
+                              http://MY-BUCKET-NAME.s3-website-us-east-1.amazonaws.com
+                              Note - when I tried to open this, I got the 403 Forbidden message. Access denied - -
+                              This is normal, see below…
+                         </li>
+                         <li>
+                              <h4>Next Part - configure security and Permissions - to make my site public for users on
+                                   the
+                                   internet</h4>
+                         </li>
+                         <li>Navigate back to AWS S3 - Top Left: Click Services (make sure I'm still logged in)</li>
+                         <li>Click S3</li>
+                         <li>Click on my bucket</li>
+                         <li><strong>NOTE</strong>: by default s3 objects are not made public even when bucket hosting
+                              is enabled. Even
+                              if an endpoint is configured, still no go!!! - trying it gives us an hsttp 403 error -
+                              access denied - go ahead - paste my endpoint url and will get 403 forbidden. To remedy
+                              this, need to perform 2 actions in my bucket:
+                              1 - Need to unblock public access to my bucket, AND 2 - make my website files public</li>
+
+                         <li>Goto AWS console - click services - Storage-S3</li>
+                         <li>Click on the bucket I want to open configuration tabs</li>
+                         <li>Click on PERMISSIONS TAB</li>
+                         <li>Click on EDIT under Block public access (bucket settings)</li>
+                         <li>UNCHECK box “Block all public access”</li>
+                         <li>Doublecheck that all other checkboxes in this section are unchecked</li>
+                         <li>Click SAVE CHANGES button - Caution box appears</li>
+                         <li>Type in “confirm” in the caution box</li>
+                         <li>Click Confirm Button</li>
+                         <li>Click on Objects tab</li>
+                         <li>Click the REFRESH ICON - the circle with the arrow pointer right/clockwise</li>
+                         <li>
+                              <h4>DO THE EDIT BUCKET POLICY NOW</h4>
+                         </li>
+                         <li>Select Permissions tab</li>
+                         <li>Click Edit Button in Bucket policy section</li>
+                         <li>Paste THIS code in the text field under “Policy:”</li>
+                         <li>
+                              <pre>{
+                              "Version":"2012-10-17",
+                              "Statement":[
+                                {
+                                  "Sid":"PublicReadGetObject",
+                                  "Effect":"Allow",
+                                  "Principal": "*",
+                                  "Action":["s3:GetObject"],
+                                  "Resource":["arn:aws:s3:::your-bucket-name/*"]
+                                }
+                              ]
+                            }</pre>
+                         </li>
+                         <li>Above - where it says “your-bucket-name” = put in your bucket name!!!!! And Keep the /*
+                         </li>
+                         <li>Click Save changes button</li>
+                         <li>OK - go try the site</li>
+                         <li>Services > S3 > Select Bucket > Click refresh button > Properties tab > scroll to Static
+                              website hosting >
+                              click the link - opens in a new tab</li>
+                         <li>Check your work! </li>
+                         <li>Start debugging!</li>
+                    </ol>
+
+
+                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                              crossorigin="anonymous"></script>
+
+
+                         <a href="#top">Back to top</a>
+               </section>
+          </article>
+     </main>
+</body>
+
+</html>
