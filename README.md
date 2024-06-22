@@ -1,2 +1,3 @@
 # git-commit-reference
-This is my 2nd try at getting this tutorial up here.
+Here's the link to the steps I take to make a commit and display as a website.
+https://chris-colby.github.io/git-commit-reference/
